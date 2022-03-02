@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "breed": "Abyssinian",
+    "coat_length": "Shorthair",
+    "characteristics": "Ticked coat; ruddy, cinnamon, blue and fawn colors",
+    "personality": "Busy, active, agenda-driven and affectionate",
+    "imageSrc": "/images/cat.jpeg",
+    "videoSrc": "/videos/letmeeat.mp4"
+  },
+  {
+    "id": "2",
+    "breed": "American Bobtail",
+    "coat_length": "Longhair and Shorthair",
+    "characteristics": "Medium to large, naturally occurring, bobtailed cat",
+    "personality": "Loving and intelligent",
+    "imageSrc": "/images/eating.jpg",
+    "videoSrc": "/videos/beomup.mp4"
+  },
+  {
+    "id": "3",
+    "breed": "American Curl",
+    "coat_length": "Longhair and Shorthair",
+    "characteristics": "Ears curl back, away from the face; available in a variety of colors and patterns",
+    "personality": "Energetic and affectionate",
+    "imageSrc": "/images/selfie2.jpg",
+    "videoSrc": "/videos/scare.mp4"    
+  },
+  {
+    "id": "4",
+    "breed": "American Curl",
+    "coat_length": "Longhair and Shorthair",
+    "characteristics": "Ears curl back, away from the face; available in a variety of colors and patterns",
+    "personality": "Energetic and affectionate",
+    "imageSrc": "/images/selfie.jpg",
+    "videoSrc": "/videos/force.mp4"
+  },
+  {
+    "id": "5",
+    "breed": "American Curl",
+    "coat_length": "Longhair and Shorthair",
+    "characteristics": "Ears curl back, away from the face; available in a variety of colors and patterns",
+    "personality": "Energetic and affectionate",
+    "imageSrc": "/images/selfie.jpg",
+    "videoSrc": "/videos/forget.mp4"
+  }
+]

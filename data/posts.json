@@ -1,0 +1,27 @@
+[
+  {
+    "imageSrc": "images/cat.jpeg",
+    "user": "Anh Duc Nguyen",
+    "description": "testing post description"
+  },
+  {
+    "imageSrc": "images/eating.jpg",
+    "user": "Anh Duc Nguyen",
+    "description": "testing post description"
+  },
+  {
+    "imageSrc": "images/nghidibanoi.jpg",
+    "user": "Anh Duc Nguyen",
+    "description": "testing post description"
+  },
+  {
+    "imageSrc": "images/selfie.jpg",
+    "user": "Anh Duc Nguyen",
+    "description": "testing post description"
+  },
+  {
+    "imageSrc": "images/selfie2.jpg",
+    "user": "Anh Duc Nguyen",
+    "description": "testing post description"
+  }
+]

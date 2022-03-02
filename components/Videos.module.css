@@ -1,0 +1,226 @@
+/* .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  height: 100vh;
+}
+
+.tv-box{
+  border: 2px solid red;
+  border-radius: 10px;
+  display: flex;
+  height: 50vh;
+  width: 50vw;
+
+}
+
+.tv-box video {
+  width: 50%;
+  height: 100%;
+}
+
+.tv-box button {
+  align-self: center;
+  height: 10%;
+}
+
+.play{
+  background-color: black;
+  align-self: center;
+  height: 10%;
+} */
+
+.iframe {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 10px solid;
+  border-radius: 32px;
+}
+
+.television {
+  width: 40vw;
+  margin: 10vh auto;
+}
+
+.television__top {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.television__antenna {
+  width: 5px;
+  height: 100px;
+  background-color: #3b3733;
+  margin-bottom: -10px;
+}
+
+.television__antenna--left {
+  transform: rotate(-30deg);
+  float: left;
+}
+
+.television__antenna--right {
+  transform: rotate(30deg);
+  float: right;
+}
+
+.television__antenna__base {
+  height: 20px;
+  background-color: #3b3733;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  margin-bottom: 10px;
+  clear: both;
+  position: relative;
+  z-index: 2;
+}
+
+.television__center {
+  position: relative;
+  z-index: 2;
+  width: 41vw;
+  height: 53vh;
+  background-color: #7a4e27;
+  border: solid 3px #eef4c4;
+  box-shadow: -10px -10px #d64832;
+  border-radius: 48px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.television__screen {
+  width: 33vw;
+  height: 50vh;
+  background-color: #eed5b6;
+  border-radius: 48px;
+  float: left;
+}
+
+.television__channels-wrapper {
+  width: 6vw;
+  height: 50vh;
+  background-color: #efd6b7;
+  border-radius: 48px;
+  float: right;
+}
+
+.television__channels {
+  padding: 0;
+}
+
+.television__channel {
+  list-style-type: none;
+  background-color: #7f4b23;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  float: left;
+  position: relative;
+}
+
+
+.television__button-next {
+  left: 2vw;
+  top: 10vh;
+	position: relative;
+	background-color: #7f4b23;
+	text-align: left;
+}
+
+.television__button-previous {
+  left: 2vw;
+  top: 10vh;
+	position: relative;
+	background-color: #7f4b23;
+	text-align: left;
+}
+.television__button:before,
+.television__button:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.television__button,
+.television__button:before,
+.television__button:after {
+	width:  2.5em;
+	height: 2.5em;
+	border-top-right-radius: 30%;
+}
+
+.television__button {
+	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+}
+.television__button:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.television__button:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+.television__button a {
+  /* display: block; */
+  position: absolute;
+  background-color: red;
+  border: 10px solid white;
+  top: 10px;
+  transform: rotate(45deg);
+  z-index: 100;
+}
+
+
+.television__channel a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e6a146;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.television__channel a:active {
+  box-shadow: inset rgba(255,255,255,0.6) 0 2px 2px,
+              inset rgba(0,0,0,0.15) 0 -2px 5px, /* inner shadow */
+                    rgba(100,100,100,0.6) 0 2px 1px,
+                    rgba(100,100,100,0.6) 0 2px 1px; /* color border */
+}
+
+.television__base {
+  width: 60%;
+  height: 50%;
+  margin: auto;
+}
+
+.television__base:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.television__foot {
+  width: 20px;
+  height: 70px;
+   margin-top: -20px;
+  background-color: #7d4d25;
+  border: solid 3px #eed5b6;
+  border-radius: 48px;
+}
+
+.television__foot--left {
+  transform: rotate(30deg);
+  float: left;
+}
+
+.television__foot--right {
+  transform: rotate(-30deg);
+  float: right;
+}
