@@ -16,11 +16,11 @@ export default function Navbar() {
             <a>WiKat</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/account/login">
             <a>Login</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
