@@ -2,7 +2,6 @@ import styles from "./layout.module.css";
 import NextButton from "./next-button";
 
 export default function Post({ data }) {
-  console.log(data);
   return (
     <section className={styles["main"]}>
       <div className={styles["wrapper"]}>

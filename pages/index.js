@@ -1,9 +1,11 @@
 import Layout from "../components/layout"
+import fs from "fs";
+
 
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/wiki`)
-  const data = await res.json()
+  const rawData = fs.readFileSync("./data/breeds.json");
+  const data = JSON.parse(rawData);
   if (!data) {
     return {
       notFound: true,
@@ -17,7 +19,6 @@ export async function getServerSideProps(context) {
 
 export default function Home(props) {
   const data = props.data;
-
   return (
     <>
       <Layout data={data} />

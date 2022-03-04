@@ -1,10 +1,11 @@
 import Navbar from "../../components/navbar";
 import Image from "next/image";
 import Link from "next/link";
+import fs from "fs";
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/wiki`);
-  const posts = await res.json();
+  const rawData = fs.readFileSync("./data/breeds.json");
+  const posts = JSON.parse(rawData);
   if (!posts) {
     return {
       notFound: true,
