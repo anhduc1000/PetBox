@@ -3,9 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import fs from "fs";
 
-console.log("in Blog page");
-
-
 export async function getServerSideProps() {
   const rawData = fs.readFileSync("./data/breeds.json");
   const posts = JSON.parse(rawData);
