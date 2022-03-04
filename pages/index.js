@@ -1,15 +1,5 @@
-import Head from 'next/head'
-// import { getSortedPostsData } from '../lib/posts'
 import Layout from "../components/layout"
 
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData()
-//   return {
-//     props: {
-//       allPostsData
-//     }
-//   }
-// }
 
 export async function getServerSideProps(context) {
   const res = await fetch(`http://localhost:3000/api/wiki`)

@@ -1,10 +1,8 @@
 import Navbar from "../../components/navbar";
-import BlogMenu from "../../components/blog-menu";
 import Image from "next/image";
 import Link from "next/link";
-import Post from "../../components/post";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`http://localhost:3000/api/wiki`);
   const posts = await res.json();
   if (!posts) {
@@ -18,7 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function WiKat({ posts }) {
-  console.log(process.cwd());
   return (
     <>
       <Navbar />

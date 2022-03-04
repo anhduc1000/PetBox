@@ -1,10 +1,8 @@
-import { da } from "date-fns/locale";
 import styles from "./layout.module.css";
 import NextButton from "./next-button";
 
 export default function Post({ data }) {
   console.log(data);
-  let index = "0";
   return (
     <section className={styles["main"]}>
       <div className={styles["wrapper"]}>

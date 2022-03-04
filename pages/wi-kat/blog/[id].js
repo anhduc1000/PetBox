@@ -1,9 +1,12 @@
 import { getBlogData } from "../../../lib/blogs";
 import Navbar from "../../../components/navbar";
+import fs from "fs";
+
 
 export async function getStaticPaths() {
-  const res = await fetch(`http://localhost:3000/api/wiki`);
-  const blogs = await res.json();
+  const rawData = fs.readFileSync("./data/breeds.json");
+  const blogs = JSON.parse(rawData);
+  console.log(blogs);
   if (!blogs) {
     return {
       notFound: true,
