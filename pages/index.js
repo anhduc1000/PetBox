@@ -1,7 +1,7 @@
 import Layout from "../components/layout"
 import fs from "fs";
 
-
+console.log("in Home page");
 
 export async function getServerSideProps(context) {
   const rawData = fs.readFileSync("./data/breeds.json");
