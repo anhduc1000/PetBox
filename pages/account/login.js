@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/navbar";
 import LoginForm from "../../components/login-form"
 import { useSession, signIn, signOut } from "next-auth/react";
 
