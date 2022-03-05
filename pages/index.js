@@ -1,11 +1,8 @@
 import Layout from "../components/layout"
-import fs from "fs";
+import { getAllBlogData } from "../lib/blogs";
 
-
-
-export async function getServerSideProps(context) {
-  const rawData = fs.readFileSync("./breeds/breeds.json");
-  const data = JSON.parse(rawData);
+export async function getServerSideProps() {
+  const data = getAllBlogData();
   if (!data) {
     return {
       notFound: true,
