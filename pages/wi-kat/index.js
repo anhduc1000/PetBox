@@ -1,11 +1,11 @@
 import Navbar from "../../components/navbar";
 import Image from "next/image";
 import Link from "next/link";
-import fs from "fs";
+import { getAllBlogData } from "../../lib/blogs";
+
 
 export async function getServerSideProps() {
-  const rawData = fs.readFileSync("./breeds/breeds.json");
-  const posts = JSON.parse(rawData);
+  const posts = getAllBlogData();
   if (!posts) {
     return {
       notFound: true,
