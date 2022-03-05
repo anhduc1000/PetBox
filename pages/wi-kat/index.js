@@ -4,7 +4,7 @@ import Link from "next/link";
 import fs from "fs";
 
 export async function getServerSideProps() {
-  const rawData = fs.readFileSync("./breed/breeds.json");
+  const rawData = fs.readFileSync("./breeds/breeds.json");
   const posts = JSON.parse(rawData);
   if (!posts) {
     return {

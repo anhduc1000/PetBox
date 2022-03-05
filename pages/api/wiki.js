@@ -1,6 +1,6 @@
 import fs from "fs";
 
-let rawData = fs.readFileSync("./breed/breeds.json");
+let rawData = fs.readFileSync("./breeds/breeds.json");
 let posts = JSON.parse(rawData);
 
 export default function handler(req, res) {

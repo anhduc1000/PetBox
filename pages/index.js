@@ -4,7 +4,7 @@ import fs from "fs";
 
 
 export async function getServerSideProps(context) {
-  const rawData = fs.readFileSync("./breed/breeds.json");
+  const rawData = fs.readFileSync("./breeds/breeds.json");
   const data = JSON.parse(rawData);
   if (!data) {
     return {
