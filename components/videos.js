@@ -45,6 +45,5 @@ export default function Videos({ data }) {
         </div>
       </div>
     </>
-
   );
 }
