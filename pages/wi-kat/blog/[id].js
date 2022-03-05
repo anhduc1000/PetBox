@@ -1,6 +1,5 @@
 import { getBlogData, getAllBlogData } from "../../../lib/blogs";
 import Navbar from "../../../components/navbar";
-import fs from "fs";
 
 
 export async function getStaticPaths() {
