@@ -4,7 +4,7 @@ import fs from "fs";
 
 
 export async function getStaticPaths() {
-  const rawData = fs.readFileSync("./data/breeds.json");
+  const rawData = fs.readFileSync("./breed/breeds.json");
   const blogs = JSON.parse(rawData);
   console.log(blogs);
   if (!blogs) {
